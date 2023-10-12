@@ -1,0 +1,255 @@
+.sub-container {
+    width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    height: 90px;
+}
+
+.about-hero {
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.849) 50%, rgba(255, 255, 255, 0.649) 57%), url(./img-folder/toa-heftiba-1-fTW0R5EGs-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text-container {
+    width: 1200px;
+    display: flex;
+}
+
+.hero-text-container div {
+    flex: 1;
+}
+
+.hero-text-container div:first-child {
+    padding: 0 5% 0 13px;
+}
+
+.hero-text-container div:first-child h1 {
+    margin: 20px 0 10px;
+    font-size: 44px;
+}
+
+.hero-text-container div:first-child p {
+    color: rgb(37, 34, 34);
+    font-size: 14px;
+    font-family: var(--font-ville);
+    font-family: var(--font-libre);
+    line-height: 24px;
+}
+
+#about-second {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 120px 0;
+    background-color: #f8f8f8;
+}
+
+.our-crew-container {
+    width: 1200px;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.our-crew-container>p {
+    font-family: var(--font-poppins);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: lightcoral;
+    margin: 0;
+    padding: 0;
+}
+
+.our-crew-container>h1 {
+    margin-bottom: 60px;
+    font-size: 40px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.our-crew-container .crew-flex {
+    display: flex;
+    flex: 1;
+}
+
+.crew-flex .crew-item {
+    padding: 0 10px;
+}
+
+.crew-flex .crew-item>div {
+    padding: 30px;
+    background-color: white;
+}
+
+.crew-flex .crew-item h4 {
+    font-family: var(--font-poppins);
+}
+
+.crew-flex .crew-item h4:first-of-type {
+    font-weight: normal;
+    margin: 0 0 10px;
+}
+
+.crew-flex .crew-item h4:last-of-type {
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: dimgray;
+}
+
+.crew-flex .crew-item p {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 24px;
+    font-family: var(--font-libre);
+    color: rgb(46, 43, 43);
+}
+
+.crew-flex .crew-item div img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.crew-flex .crew-item div .social-icon {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon div {
+    border: 1px solid #dfdfdf;
+    width: 32px;
+    height: 32px;
+    margin: 0 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon div svg {
+    fill: darkcyan;
+}
+
+.social-icon div svg:hover {
+    fill: black;
+}
+
+.about-third .second-section-container .first-row {
+    padding-bottom: 120px;
+}
+
+.about-third .first-row div:first-child img:first-of-type {
+    z-index: 2;
+}
+
+
+.about-third .first-row div:first-child img:last-of-type {
+    z-index: 1;
+    position: relative;
+    left: 29%;
+}
+
+
+.about-third h1 {
+    font-weight: 200;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    color: #dfdfdf;
+}
+
+@media (max-width: 991px) {
+    .hero-text-container div:first-of-type {
+        flex-basis: 66.66%;
+        padding: 0 9px;
+    }
+
+    .hero-text-container div:last-of-type {
+        flex-basis: 33.33%;
+    }
+
+    .about-third h1 {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-hero {
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.822) 85%, rgba(255, 255, 255, 0.814) 15%), url(./img-folder/toa-heftiba-1-fTW0R5EGs-unsplash.jpg);
+    }
+
+    .hero-text-container div:first-of-type {
+        flex-basis: 75.55%;
+    }
+
+    .hero-text-container div:last-of-type {
+        flex-basis: 24.44%;
+    }
+
+    .our-crew-container .crew-flex {
+        display: block;
+    }
+
+    .our-crew-container .crew-flex .crew-item{
+        padding-bottom: 20px;
+    }
+
+    .about-third .second-section-container .first-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-row .row-in,.second-row-in {
+        margin-top: 0;
+    }
+
+    .about-third .second-section-container .first-row {
+        padding-bottom: 0;
+    }
+
+    .about-third .second-section-container .first-row .row-in {
+        margin-top: 50px;
+    }
+
+    .about-third .second-section-container .first-row .second-row-in {
+        margin-top: 180px;
+    }
+}
+
+@media (max-width: 479px) {
+
+    .hero-text-container div:first-of-type {
+        flex-basis: 100%;
+    }
+
+    .hero-text-container div:last-of-type {
+        flex-basis: 0;
+    }
+
+    .about-third .first-row div:first-child img:first-of-type {
+        width: 200px;
+        height: 450px;
+    }
+
+    .about-third .first-row div:first-child img:last-of-type {
+        width: 200px;
+    }
+
+    .about-third .second-section-container .first-row .row-in {
+        margin-top: 0px;
+    }
+}

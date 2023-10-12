@@ -1,0 +1,9 @@
+.about-hero {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.881) 50%, rgba(255, 255, 255, 0.712) 57%), url(./img-folder/angele-kamp-NK19f93xX88-unsplash.jpg);
+}
+
+@media (max-width: 767px) {
+    .about-hero {
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.875) 85%, rgba(255, 255, 255, 0.881) 15%), url(./img-folder/angele-kamp-NK19f93xX88-unsplash.jpg);
+    }
+}

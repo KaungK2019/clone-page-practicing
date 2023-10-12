@@ -1,0 +1,256 @@
+.about-hero {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.765) 50%, rgba(255, 255, 255, 0.617) 57%), url(./img-folder/contact-bg.jpg)
+}
+
+.contact-address {
+    display: flex;
+    justify-content: center;
+    padding: 120px 0;
+    background-color: #f8f8f8;
+}
+
+.address-container {
+    width: 1200px;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.address-title {
+    text-align: center;
+    font-family: var(--font-poppins);
+    margin-bottom: 60px;
+}
+
+.address-title p {
+    color: lightcoral;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.address-title h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.address-list {
+    width: 80%;
+    display: flex;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.address-list div {
+    flex: 1;
+}
+
+.address-list h4 {
+    font-family: var(--font-poppins);
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 10px 0 20px;
+}
+
+.address-list p {
+    font-family: var(--font-libre);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.address-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.address-image {
+    width: 100%;
+}
+
+.address-image img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.form-format {
+    width: 100%;
+    display: flex;
+    background-color: white;
+}
+
+.form-map {
+    width: 39.99%;
+    padding: 60px;
+    border-right: 1px solid rgba(105, 105, 105, 0.245);
+}
+
+.form-map #map {   
+    height: 440px;
+    background-color: pink;
+}
+
+.input-form {
+    width: 59.99%;
+    height: 560px;
+    padding: 60px;
+}
+
+.input-form h3 {
+    font-family: var(--font-poppins);
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-size: 24px;
+}
+
+form {
+    width: 100%;
+}
+
+.biography {
+    width: 100%;
+    display: flex;
+}
+
+.biography div {
+    flex: 1;
+}
+
+.biography div label,input {
+    display: block;
+}
+
+.biography div label {
+    margin-bottom: 8px;
+}
+
+.biography  div input {
+    width: 94%;
+    padding: 12px 12px 12px 40px;
+    margin-bottom: 24px;
+    background-color: #f8f8f8;
+}
+
+.biography div input {
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 8px center;
+}
+
+.biography div:first-child input {
+    background-image: url(img-folder/fuser-icon.png);
+}
+
+.biography div:nth-of-type(2) input {
+    background-image: url(img-folder/fmail-icon.png);
+}
+
+.biography div:last-child {
+    display: block;
+}
+
+.message label, textarea{
+   display: block;
+   width: 100%;
+}
+
+.message textarea {
+    background: url(img-folder/ftextarea-icon.png) no-repeat;
+    background-size: 20px;
+    background-position: 10px 5px;
+    padding: 8px 12px 8px 40px;
+    resize: vertical;
+    background-color: #f8f8f8;
+    margin-bottom: 24px;
+}
+
+.message label {
+    margin-bottom: 8px;
+}
+
+form button {
+    width: 185px;
+    padding: 20px 40px;
+    border: none;
+    background-color: firebrick;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    
+}
+
+form button:hover {
+    background-color: orangered;
+    transition: 0.3s ease-in;
+}
+
+form div input, textarea {
+    border: 1px solid rgba(105, 105, 105, 0.148);
+    outline: none;
+}
+
+form div input::placeholder, textarea::placeholder {
+    font-family: var(--font-poppins);
+    font-size: 12px;
+}
+
+@media (max-width: 991px) {
+
+    .address-list {
+        width: 100%;
+    }
+
+    .form-format {
+        flex-direction: column;
+    }
+
+    .form-format div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-hero {
+        background-image: linear-gradient(to right,rgba(255, 255, 255, 0.822) 85%, rgba(255, 255, 255, 0.814) 15%), url(./img-folder/contact-bg.jpg)
+    }
+
+    .address-list {
+        flex-direction: column;
+    }
+
+    .address-list div {
+        width: 100%;
+    }
+
+    form div:first-child {
+        flex-direction: column;
+    }
+
+    form div:first-child input {
+        width: 100%;
+    }
+
+    .input-form {
+        height: auto;
+    }
+}
+
+@media (max-width: 479px) {
+
+    .address-title h1 {
+        font-size: 30px;
+    }
+
+    .form-format > div:first-child{
+       padding: 20px;
+    }
+
+    .form-format > div:last-child {
+        padding: 60px 20px;
+    }
+}
